@@ -1,0 +1,257 @@
+@font-face {
+  font-family: 'pptmp-icf';
+  src:
+    url('./fonts/pptmp-icf.ttf?nc3nyg') format('truetype'),
+    url('./fonts/pptmp-icf.woff?nc3nyg') format('woff'),
+    url('./fonts/pptmp-icf.svg?nc3nyg#pptmp-icf') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icf-"], [class*=" icf-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'pptmp-icf' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icf-home1:before {
+  content: "\e904";
+}
+.icf-cog:before {
+  content: "\e994";
+}
+.icf-wrench:before {
+  content: "\e991";
+}
+.icf-checkbox-checked:before {
+  content: "\ea52";
+}
+.icf-checkbox-unchecked:before {
+  content: "\ea53";
+}
+.icf-radio-checked:before {
+  content: "\ea54";
+}
+.icf-radio-checked2:before {
+  content: "\ea55";
+}
+.icf-radio-unchecked:before {
+  content: "\ea56";
+}
+.icf-cancel-circle:before {
+  content: "\ea0d";
+}
+.icf-volume-high:before {
+  content: "\ea26";
+}
+.icf-volume-medium:before {
+  content: "\ea27";
+}
+.icf-volume-low:before {
+  content: "\ea28";
+}
+.icf-volume-mute:before {
+  content: "\ea29";
+}
+.icf-volume-increase:before {
+  content: "\ea2b";
+}
+.icf-volume-decrease:before {
+  content: "\ea2c";
+}
+.icf-mic:before {
+  content: "\e91e";
+}
+.icf-eye:before {
+  content: "\e9ce";
+}
+.icf-eye-blocked:before {
+  content: "\e9d1";
+}
+.icf-eye-plus:before {
+  content: "\e9cf";
+}
+.icf-eye-minus:before {
+  content: "\e9d0";
+}
+.icf-connection:before {
+  content: "\e91b";
+}
+.icf-image1:before {
+  content: "\e90d";
+}
+.icf-camera1:before {
+  content: "\e910";
+}
+.icf-music1:before {
+  content: "\e911";
+}
+.icf-video-camera1:before {
+  content: "\e914";
+}
+.icf-bin:before {
+  content: "\e9ac";
+}
+.icf-spinner6:before {
+  content: "\e97f";
+}
+.icf-spinner2:before {
+  content: "\e97b";
+}
+.icf-spinner9:before {
+  content: "\e982";
+}
+.icf-home:before {
+  content: "\e907";
+}
+.icf-image:before {
+  content: "\e912";
+}
+.icf-camera:before {
+  content: "\e913";
+}
+.icf-music:before {
+  content: "\e915";
+}
+.icf-video-camera:before {
+  content: "\e916";
+}
+.icf-question-circle:before {
+  content: "\f059";
+}
+.icf-info-circle:before {
+  content: "\f05a";
+}
+.icf-exclamation-circle:before {
+  content: "\f06a";
+}
+.icf-plus1:before {
+  content: "\f067";
+}
+.icf-minus1:before {
+  content: "\f068";
+}
+.icf-plus-circle1:before {
+  content: "\f057";
+}
+.icf-minus-circle1:before {
+  content: "\f058";
+}
+.icf-repeat:before {
+  content: "\f01e";
+}
+.icf-rotate-right:before {
+  content: "\f01e";
+}
+.icf-refresh:before {
+  content: "\f021";
+}
+.icf-toggle-on:before {
+  content: "\f205";
+}
+.icf-toggle-off:before {
+  content: "\f204";
+}
+.icf-caret-down1:before {
+  content: "\f0df";
+}
+.icf-caret-up1:before {
+  content: "\f0e0";
+}
+.icf-caret-left1:before {
+  content: "\f0e1";
+}
+.icf-caret-right1:before {
+  content: "\f0e2";
+}
+.icf-chevron-left1:before {
+  content: "\f055";
+}
+.icf-chevron-right1:before {
+  content: "\f056";
+}
+.icf-chevron-up1:before {
+  content: "\f079";
+}
+.icf-chevron-down1:before {
+  content: "\f07a";
+}
+.icf-arrow-circle-left1:before {
+  content: "\f0a8";
+}
+.icf-arrow-circle-right1:before {
+  content: "\f0a9";
+}
+.icf-arrow-circle-up1:before {
+  content: "\f0aa";
+}
+.icf-arrow-circle-down1:before {
+  content: "\f0ab";
+}
+.icf-bluetooth-b:before {
+  content: "\f294";
+}
+.icf-bluetooth:before {
+  content: "\f293";
+}
+.icf-pencil:before {
+  content: "\f040";
+}
+.icf-eraser:before {
+  content: "\f12d";
+}
+.icf-trash-o:before {
+  content: "\f014";
+}
+.icf-plus-circle:before {
+  content: "\f05b";
+}
+.icf-minus-circle:before {
+  content: "\f05c";
+}
+.icf-arrow-circle-left:before {
+  content: "\f0ac";
+}
+.icf-arrow-circle-right:before {
+  content: "\f0ad";
+}
+.icf-arrow-circle-up:before {
+  content: "\f0ae";
+}
+.icf-arrow-circle-down:before {
+  content: "\f0af";
+}
+.icf-plus:before {
+  content: "\e90e";
+}
+.icf-minus:before {
+  content: "\e90f";
+}
+.icf-back:before {
+  content: "\e905";
+}
+.icf-close:before {
+  content: "\e906";
+}
+.icf-cheveron-down:before {
+  content: "\e900";
+}
+.icf-cheveron-left:before {
+  content: "\e901";
+}
+.icf-cheveron-right:before {
+  content: "\e902";
+}
+.icf-cheveron-up:before {
+  content: "\e903";
+}
