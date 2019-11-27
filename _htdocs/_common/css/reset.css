@@ -1,0 +1,85 @@
+@charset "UTF-8";
+/* ==========================================================
+Name:
+    reset.css
+
+Description:
+    ユーザーエージェントスタイルの初期化を行う
+
+Contents:
+    reset style
+========================================================== */
+/* ---------------------------------------------
+*   reset style
+--------------------------------------------- */
+/* line 17, src/_sass/reset.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    /*font: inherit;
+    font-style: inherit;
+    font-variant: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    font-family: inherit;*/
+    font-size: 100%;
+}
+
+/* line 37, src/_sass/reset.scss */
+html {
+    line-height: 1;
+}
+
+/* line 40, src/_sass/reset.scss */
+ol, ul {
+    list-style: none;
+}
+
+/* line 43, src/_sass/reset.scss */
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/* line 47, src/_sass/reset.scss */
+caption, th, td {
+    vertical-align: middle;
+    text-align: left;
+    font-weight: normal;
+}
+
+/* line 52, src/_sass/reset.scss */
+q, blockquote {
+    quotes: none;
+}
+
+/* line 55, src/_sass/reset.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+    clear: both;
+    content: "";
+    content: none;
+}
+
+/* line 60, src/_sass/reset.scss */
+a img {
+    border: none;
+}
+
+/* line 63, src/_sass/reset.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}

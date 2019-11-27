@@ -1,0 +1,8 @@
+
+$(function(){
+
+	trace("jQuely Loaded!")
+
+
+});
+
