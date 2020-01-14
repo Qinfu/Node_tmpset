@@ -22,6 +22,9 @@ const fs = require('fs');
 const qstr = require('querystring');
 const EventEmitter = require("events");
 
+const ssl_server_key = './_asset/server.key';
+const ssl_server_crt = './_asset/server.crt';
+
 let ip = "192.168.0.7";
 let portNum = "8888";
 let fileroot = ".";
@@ -41,13 +44,8 @@ const fsRun = (xPort,xRoot,xHttps) => {
   }
 
   ip = fsGetLocalAddress().ipv4[0].address;
-  let xProtocol = "http"
 
   if(xHttps){
-
-    let ssl_server_key = './_asset/server.key';
-    let ssl_server_crt = './_asset/server.crt';
-    
     let xOptions = {
       key: fs.readFileSync(ssl_server_key),
       cert: fs.readFileSync(ssl_server_crt),
@@ -55,8 +53,7 @@ const fsRun = (xPort,xRoot,xHttps) => {
     };
     
     const http = require('https');
-    server = http.createServer(xOptions);
-    xProtocol = "https"
+    server = http.createServer(xOptions);    
   }else{
     const http = require('http');
     server = http.createServer();    
@@ -65,7 +62,11 @@ const fsRun = (xPort,xRoot,xHttps) => {
   server.listen(portNum);
   server.on('request',fsServerJob);
 
-  trace('start at '+ xProtocol +"://"+ ip +":" + portNum);
+  if(xHttps){
+    trace('start at https://'+ ip +":" + portNum);
+  }else{
+    trace('start at '+ ip +":" + portNum);
+  }
   return server;
 };
 
