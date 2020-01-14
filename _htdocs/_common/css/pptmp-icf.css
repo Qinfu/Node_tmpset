@@ -1,9 +1,9 @@
 @font-face {
   font-family: 'pptmp-icf';
   src:
-    url('./fonts/pptmp-icf.ttf?nc3nyg') format('truetype'),
-    url('./fonts/pptmp-icf.woff?nc3nyg') format('woff'),
-    url('./fonts/pptmp-icf.svg?nc3nyg#pptmp-icf') format('svg');
+    url('./fonts/pptmp-icf.ttf') format('truetype'),
+    url('./fonts/pptmp-icf.woff') format('woff'),
+    url('./fonts/pptmp-icf.svg#pptmp-icf') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -24,7 +24,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icf-home1:before {
+.icf-home:before {
+  content: "\e907";
+}
+.icf-home2:before {
   content: "\e904";
 }
 .icf-cog:before {
@@ -110,9 +113,6 @@
 }
 .icf-spinner9:before {
   content: "\e982";
-}
-.icf-home:before {
-  content: "\e907";
 }
 .icf-image:before {
   content: "\e912";

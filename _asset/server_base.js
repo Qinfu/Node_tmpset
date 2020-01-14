@@ -144,6 +144,8 @@ const fsPostJob = (req, res) =>{
 
 /*ファイルタイプ設定*/
 const fsGetFileType = xFileName => {
+  /*xFileName = xFileName.split("?")[0];
+  trace(xFileName);*/
   let xTension = fsCheakReg(xFileName);
   let xType = {'Content-Type': 'text/html'};
 
@@ -205,6 +207,15 @@ const fsGetFileType = xFileName => {
 
     case "ico":
       xType['Content-Type'] = 'image/x-icon';
+      break;
+
+    case "ttf":
+      xType['Content-Type'] = 'application/x-font-ttf';
+      break;
+
+    case "woff":
+      xType['Content-Type'] = 'application/font-woff';
+      break;
     }
 
     return xType;
@@ -251,5 +262,4 @@ exports._ip = ip;
 exports._port = portNum;
 exports._htdocs = fileroot;
 exports._server = server;
-
 exports.run = fsRun;
