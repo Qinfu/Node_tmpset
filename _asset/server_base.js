@@ -20,7 +20,9 @@ const _server = oHttpServer.run("ポート番号","ドキュメントルート",
 const os = require('os');
 const fs = require('fs');
 const qstr = require('querystring');
+
 const EventEmitter = require("events");
+const evtTarget = new EventEmitter();
 
 const ssl_server_key = './_asset/server.key';
 const ssl_server_crt = './_asset/server.crt';
@@ -73,6 +75,7 @@ const fsRun = (xPort,xRoot,xHttps) => {
 
 /*リクエスト受信*/
 const fsServerJob = (req, res) =>{
+  trace(req.method);
 
   if(req.method === 'POST') {
     fsPostJob(req, res);
@@ -130,7 +133,7 @@ const fsPostJob = (req, res) =>{
 
     var postDataObject = qstr.parse(postData);
     trace('posted data:' + postData);
-    server.emit("getPost", null, postDataObject);
+    server.emit("getPost", postDataObject);
     
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.write('true');

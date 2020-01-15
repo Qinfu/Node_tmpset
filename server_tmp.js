@@ -18,7 +18,6 @@ let _server = oHttpServer.run("3000","./_htdocs/",isHttps);
 
 _server.on("getPost", (err,xObject) =>{
 	trace("Get POST!");
-
 	for (var i in xObject){
 		trace( i + ':' + xObject[i]);
 	}

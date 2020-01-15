@@ -22,4 +22,6 @@
 	display:block;
 	overflow:hidden;
 	font-size:1.4rem;
+	line-height:155%;
+	margin:1em 0;
 }

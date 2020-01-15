@@ -14,6 +14,7 @@
 <link rel="stylesheet" href="./_common/css/frame.css">
 <link rel="stylesheet" href="./_common/css/pptmp-icf.css">
 <script type="text/javascript" src="./_common/libs/jquery-2.2.4.min.js"></script>
+<!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>-->
 <script type="text/javascript" src="./_common/libs/_util.js"></script>
 
 <link rel="stylesheet" href="./css/content.css">
@@ -28,10 +29,45 @@
             This page is working on Node.js
         </p>
 
-        <from method="POST" action="./">
-        	<input type="text" name="text_inpout" value="" />
-        	<button type="submit">Submit</button>
-        </from> 
+        <p>
+            <form name="myFrom" method="POST" action="./">
+
+                Text:<input type="text" name="input_text" value="" /><br />
+
+                Number:<input type="number" name="input_number" value="" /><br />
+
+                Password:<input type="password" name="input_password" value="" /><br />
+
+                Radio:
+                <div class="icf-radio">
+                    <label><input type="radio" name="input_radio" value="A" checked><span>A</span></label>
+                    <label><input type="radio" name="input_radio" value="B"><span>B</span></label>
+                </div><br />
+
+                CheckBox:
+                <div class="icf-cbox">
+                    <label><input type="checkbox" name="input_checkbox" value="A" checked><span>A</span></label>
+                    <label><input type="checkbox" name="input_checkbox" value="B"><span>B</span></label>
+                    <label><input type="checkbox" name="input_checkbox" value="C"><span>C</span></label>
+                    <label><input type="checkbox" name="input_checkbox" value="D"><span>D</span></label>
+                </div><br />
+
+               Select:
+               <select name="input_select">
+                    <option value="001">001</option>
+                    <option value="002">002</option>
+                    <option value="003">003</option>
+                    <option value="004">004</option>
+                </select><br />
+
+                Range:
+                <input type="range" name="input_range" />
+
+                <textarea name="txtarea"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </p>
 
      </div>
 </body>
