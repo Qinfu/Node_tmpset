@@ -1,27 +1,17 @@
+@charset "UTF-8";
 
 #container{
-	display:block;
-	overflow:hidden;
-	width:100%;
-	position:relative;
-	padding:15px;
-	line-height:155%;
-	text-align:center;
+  padding:10px;
 }
 
-
-#container h1{
+#container > section{
 	display:block;
 	overflow:hidden;
-	font-size:2.0rem;
-	line-height:125%;
-	margin-bottom:15px;
+	padding:2em;
 }
 
-#container p{
-	display:block;
-	overflow:hidden;
-	font-size:1.4rem;
-	line-height:155%;
+#container h2{
+	font-size:1.8rem;
 	margin:1em 0;
+	line-height:125%;
 }

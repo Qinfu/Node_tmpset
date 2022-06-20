@@ -8,67 +8,105 @@
 <meta name="viewport" content="width=device-width" />
 <meta name="format-detection" content="telephone=no" />
 
-<title>Node tmp</title>
+<title>PAGE TITLE</title>
 
 <link rel="stylesheet" href="./_common/css/reset.css">
 <link rel="stylesheet" href="./_common/css/frame.css">
-<link rel="stylesheet" href="./_common/css/pptmp-icf.css">
+<link rel="stylesheet" href="./_common/css/icf.css">
+<link rel="stylesheet" href="./_common/css/formstyle.css">
+
 <script type="text/javascript" src="./_common/libs/jquery-2.2.4.min.js"></script>
-<!--<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.js"></script>-->
 <script type="text/javascript" src="./_common/libs/_util.js"></script>
+
+<!--<script type="text/javascript" src="/socket.io/socket.io.js"></script>-->
+<!--<script type="text/javascript" src="./libs/oSocketLib.js.js"></script>-->
 
 <link rel="stylesheet" href="./css/content.css">
 <script type="text/javascript" src="./libs/content.js"></script>
 
+<script type="text/javascript">
+    /**/
+</script>
 </head>
 <body>
-    <div id="container">
-        <h1>Node tmp</h1>
+    <div id="mainFrame">
+    	<header><h1>PAGE TITLE</h1></header>
+    	<main>
+    		<div id="container">
+                <section>
+                    <h2>Supported icon fonts</h2>
 
-        <p>
-            This page is working on Node.js
-        </p>
+                    <ul>
+                        <li><span class="swt-caret-down"></span></li>
+                        <li><span class="swt-caret-up"></span></li>
+                        <li><span class="swt-caret-left"></span></li>
+                        <li><span class="swt-caret-righ"></span></li>
+                        <li><span class="swt-chevron-lef"></span></li>
+                        <li><span class="swt-chevron-righ"></span></li>
+                        <li><span class="swt-chevron-up"></span></li>
+                        <li><span class="swt-chevron-down"></span></li>
+                        <li><span class="swt-check-square-o"></span></li>
+                        <li><span class="swt-square-o"></span></li>
+                        <li><span class="swt-check-square"></span></li>
+                        <li><span class="swt-square"></span></li>
+                        <li><span class="swt-check-circle"></span></li>
+                        <li><span class="swt-circle"></span></li>
+                        <li><span class="swt-check-circle-o"></span></li>
+                        <li><span class="swt-circle-o"></span></li>
+                        <li><span class="swt-toggle-on2"></span></li>
+                        <li><span class="swt-toggle-off"></span></li>
+                        <li><span class="swt-radio-checked3"></span></li>
+                        <li><span class="swt-radio-unchecked2"></span></li>
+                    </ul>
+                </section>
 
-        <p>
-            <form name="myFrom" method="POST" action="./">
+                <section>
+                    <h2>Sample form</h2>
 
-                Text:<input type="text" name="input_text" value="" /><br />
+                    <form method="POST" action="/">
+                        <section>
+                            <label class="cbx_swtch">
+                                <input type="checkbox" name="CHKBOX_1" value="0" /><span>Cheak Switch</span>
+                            </label><br />
 
-                Number:<input type="number" name="input_number" value="" /><br />
+                            <label class="cbx_chkmk">
+                                <input type="checkbox" name="CHKBOX_2" value="1" /><span>Cheak Mark</span>
+                            </label>
+                        </section>
 
-                Password:<input type="password" name="input_password" value="" /><br />
+                        <section>
+                            <label class="rdo_circle">
+                                <input type="radio" name="RADIO_1" value="0" /><span>Radio1</span>
+                            </label>
+                            <label class="rdo_circle">
+                                <input type="radio" name="RADIO_1" value="1" /><span>Radio2</span>
+                            </label>
+                            <label class="rdo_circle">
+                                <input type="radio" name="RADIO_1" value="2" /><span>Radio3</span>
+                            </label>
+                        </section>
 
-                Radio:
-                <div class="icf-radio">
-                    <label><input type="radio" name="input_radio" value="A" checked><span>A</span></label>
-                    <label><input type="radio" name="input_radio" value="B"><span>B</span></label>
-                </div><br />
+                        <section>
+                            <label class="rdo_chkmk">
+                                <input type="radio" name="RADIO_2" value="0" /><span>Radio1</span>
+                            </label>
+                            <label class="rdo_chkmk">
+                                <input type="radio" name="RADIO_2" value="1" /><span>Radio2</span>
+                            </label>
+                            <label class="rdo_chkmk">
+                                <input type="radio" name="RADIO_2" value="2" /><span>Radio3</span>
+                            </label>
+                        </section>
 
-                CheckBox:
-                <div class="icf-cbox">
-                    <label><input type="checkbox" name="input_checkbox" value="A" checked><span>A</span></label>
-                    <label><input type="checkbox" name="input_checkbox" value="B"><span>B</span></label>
-                    <label><input type="checkbox" name="input_checkbox" value="C"><span>C</span></label>
-                    <label><input type="checkbox" name="input_checkbox" value="D"><span>D</span></label>
-                </div><br />
+                        <input type="text" value="" placeholder="send text to server" />
+                        <input type="button" value="BUTTON" />
+                    </form>
+                </section>
 
-               Select:
-               <select name="input_select">
-                    <option value="001">001</option>
-                    <option value="002">002</option>
-                    <option value="003">003</option>
-                    <option value="004">004</option>
-                </select><br />
-
-                Range:
-                <input type="range" name="input_range" />
-
-                <textarea name="txtarea"></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
-        </p>
-
-     </div>
+    		</div>
+    	</main>
+    	<footer>
+    		<p id="copy">&copy; 20xx shima-tec. All Rights Reserved</p>
+    	</footer>
 </body>
 </html>

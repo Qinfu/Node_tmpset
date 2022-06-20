@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'switch_icn';
+  src:
+    url('fonts/switch_icn.ttf') format('truetype'),
+    url('fonts/switch_icn.woff') format('woff'),
+    url('fonts/switch_icn.svg#switch_icn') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="swt-"], [class*=" swt-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'switch_icn' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.swt-caret-down:before {
+  content: "\f0d8";
+}
+.swt-caret-up:before {
+  content: "\f0d9";
+}
+.swt-caret-left:before {
+  content: "\f0da";
+}
+.swt-caret-right:before {
+  content: "\f0db";
+}
+.swt-chevron-left:before {
+  content: "\f053";
+}
+.swt-chevron-right:before {
+  content: "\f054";
+}
+.swt-chevron-up:before {
+  content: "\f077";
+}
+.swt-chevron-down:before {
+  content: "\f078";
+}
+.swt-check-square-o:before {
+  content: "\f046";
+}
+.swt-square-o:before {
+  content: "\f096";
+}
+.swt-check-square:before {
+  content: "\f14a";
+}
+.swt-square:before {
+  content: "\f0c8";
+}
+.swt-check-circle:before {
+  content: "\f058";
+}
+.swt-circle:before {
+  content: "\f111";
+}
+.swt-check-circle-o:before {
+  content: "\f05d";
+}
+.swt-circle-o:before {
+  content: "\f10c";
+}
+.swt-toggle-on2:before {
+  content: "\f205";
+}
+.swt-toggle-off:before {
+  content: "\f204";
+}
+.swt-radio-checked3:before {
+  content: "\ea54";
+}
+.swt-radio-unchecked2:before {
+  content: "\ea56";
+}

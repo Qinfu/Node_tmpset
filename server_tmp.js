@@ -1,24 +1,20 @@
-const trace = function(xMsg){
-  console.log(">>" + xMsg);
-}
 
-
-let isHttps = false;
-
-//コマンドライン引数取得
-if(process.argv[2] && process.argv[2] == "true"){
-	isHttps = true;
-}
+//基本処理ライブラリ
+const $ = require('./personal_modules/utility_lib/');
 
 //ベーシックサーバ作成
-let oHttpServer = require('./_asset/server_base');
+const oHttpServer = require('./personal_modules/server_base/');
+oHttpServer._ip = $.localip();
 
-
-let _server = oHttpServer.run("3000","./_htdocs/",isHttps);
+const _server = oHttpServer.run("3000","./_htdocs/",true);
 
 _server.on("getPost", (err,xObject) =>{
-	trace("Get POST!");
+	$.trace("Get POST!");
+
 	for (var i in xObject){
-		trace( i + ':' + xObject[i]);
+		$.trace( i + ':' + xObject[i]);
 	}
 });
+
+$.trace("https://" + oHttpServer._ip + ":3000");
+

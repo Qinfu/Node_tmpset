@@ -1,0 +1,268 @@
+@charset "UTF-8";
+
+
+/***********************************
+from parts
+***********************************/
+
+input[class$="_3m"]{
+	width:3em!important;
+}
+input[class$="_4m"]{
+	width:4em!important;
+}
+input[class$="_5m"]{
+	width:5em!important;
+}
+input[class$="_8m"]{
+	width:8em!important;
+}
+input[class$="_10m"]{
+	width:10em!important;
+}
+
+input[class$="_p100"]{
+	width:100%!important;
+}
+input[class$="_p50"]{
+	width:50%!important;
+}
+input[class$="_p25"]{
+	width:25%!important;
+}
+
+
+
+/*input{
+	-webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+}*/
+label{
+	-webkit-touch-callout:none;
+    -webkit-tap-highlight-color:transparent;
+}
+
+input,select{
+	 -moz-appearance: none;
+	 -webkit-appearance: none;
+	 appearance: none;
+}
+
+select{
+	background: none transparent;
+	vertical-align: middle;
+	font-size: inherit;
+	color: inherit;
+	box-sizing: content-box;
+	cursor:pointer;
+}
+
+input[type='text']{
+	width:100%;
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding:10px;
+	font-size:1.5em;
+	margin:0.5em 0;
+}
+
+textarea{
+	width:100%;
+	border: 1px solid #4ccbd5;
+	border-radius: 5px;
+	padding:10px;
+}
+
+/*ボタン*/
+button,
+input[type="button"],
+input[type="submit"]{
+	margin:0.5em 0;
+	padding:10px;
+	font-size:1.5em;
+	padding:0.5em 2em;
+	border: 1px solid #cccccc;
+	border-radius: 50px;
+	background-color:#eeeeee;
+	cursor:pointer;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="submit"]:active{
+	background-color:#cccccc;
+}
+
+button:disabled,
+input[type="button"]:disabled,
+input[type="submit"]:disabled{
+	opacity:0.5;
+}
+}
+
+
+/*スライダー*/
+input[type="range"] {
+  width: 100%; background: #eee;
+  box-shadow: 0 0 10px #666;
+  border-radius: 50px;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background: #333333;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+/*input[type="range"]::-webkit-slider-thumb:hover {
+  background: #999;
+}*/
+input[type="range"]::-webkit-slider-thumb:active {
+  background: #999999;
+}
+
+/*チェックボックス*/
+label[class^='cbx_']{
+	clear:both;
+	display:inline-block;
+	position:relative;
+	font-size: 1.5em;
+	cursor:pointer;
+}
+
+label[class^='cbx_'] > input{
+	display:none;
+}
+label[class^='cbx_'] > span{
+	display:inline-block;
+	overflow:hidden;
+	vertical-align: middle;
+}
+label[class^='cbx_'] > span::before{
+	display:inline-block;
+	overflow:hidden;
+	font-family: 'switch_icn';
+	margin-right:10px;
+	color:#333333;
+	float:left;	
+}
+
+/*チェックボックス スイッチ*/
+label.cbx_swtch{
+	line-height:200%;
+	cursor:pointer;
+}
+
+label.cbx_swtch > span::before{
+	content: "\f205";
+	font-size:2em;
+	line-height:100%;
+}
+
+label.cbx_swtch > input[type="checkbox"]:checked +span::before{
+	content: "\f204";
+}
+
+/*チェックボックス チェックマーク*/
+label.cbx_chkmk{
+	line-height:200%;
+}
+
+label.cbx_chkmk > span::before{
+	content: "\f096";
+	font-size:2em;
+	line-height:100%;
+}
+
+label.cbx_chkmk > input[type="checkbox"]:checked +span::before{
+	margin-right:4px;
+	content: "\f046";
+}
+
+
+/*ラジオボタン*/
+label[class^='rdo_']{
+	clear:both;
+	display:inline-block;
+	position:relative;
+	font-size: 1.5em;
+	cursor:pointer;
+}
+
+label[class^='rdo_'] > input{
+	display:none;
+}
+label[class^='rdo_'] > span{
+	display:inline-block;
+	/*overflow:hidden;*/
+	vertical-align: middle;
+}
+label[class^='rdo_'] > span::before{
+	display:inline-block;
+	/*overflow:hidden;*/
+	font-family: 'switch_icn';
+	margin-right:5px;
+	color:#333333;
+	float:left;	
+}
+
+/*ラジオボタン　丸*/
+label.rdo_circle{
+	line-height:200%;
+}
+
+label.rdo_circle > span::before{
+	content: "\ea56";
+	font-size:1.5em;
+}
+
+label.rdo_circle > input[type="radio"]:checked +span::before{
+	content: "\ea54";
+}
+
+/*ラジオボタン　チェックマーク*/
+label.rdo_chkmk{
+	line-height:175%;
+}
+
+label.rdo_chkmk > span::before{
+	content: "\f111";
+	font-size:1.75em;
+}
+
+label.rdo_chkmk > input[type="radio"]:checked +span::before{
+	content: "\f058";
+}
+
+/*セレクトメニュー*/
+.sel_rect{
+	display:inline-block;
+	width:80%;
+	overflow:hidden;
+	position:relative;
+	background:url('../images/arrow_r.png') no-repeat right 50%;
+}
+.sel_rect > select{
+	border: 1px solid #cccccc;
+	border-radius: 5px;
+	padding:10px;
+	font-size:1.5em;
+	margin:0.5em 0;
+	width:calc(100% - 22px);
+}
+
+/*.sel_rect > span{
+	display:inline-block;
+	margin-left: -2em;
+}
+.sel_rect > span::after{
+	display:inline-block;
+	font-family: 'switch_icn';
+	content: "\f054";
+	font-size:1.5em;
+	line-height:100%;
+}
+*/
+

@@ -143,11 +143,11 @@ $(function(){
   });
 
 
-  $(window).on("resize",function() {
+  $(window).resize(function() {
     //
   });
 
-  $(window).on("load",function(){
+  $(window).load(function(){
     //
   });
 
